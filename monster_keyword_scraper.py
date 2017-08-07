@@ -161,13 +161,13 @@ class MonsterScraper:
 	# soft skill words/phrases, and useless words/phrases 
 	def create_file_of_keywords(self, keyword_list, job_title):
 		print('Writing to file...')
-		file_path = '/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/'+job_title+'_NEEDS_REVIEW.txt'
+		file_path = '/<path>/<to>/<store>/<file>/'+job_title+'_NEEDS_REVIEW.txt'
 
 		# CLEANING DATA - VERBS
 		# Removing redundant verbs in the text
 		verbs_to_remove = []
-		a_path = '/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/1_action_verbs.txt'
-		a_lemma_path = '/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/1_action_verbs_lemmatized.txt'
+		a_path = '/<path>/<to>/<verbs>/1_action_verbs.txt'
+		a_lemma_path = '/<path>/<to>/<lemmatized>/<verbs>/1_action_verbs_lemmatized.txt'
 		with open(a_path, 'r') as f:
 			for line in f:
 				verbs_to_remove.append(line.strip('\n'))
@@ -182,8 +182,8 @@ class MonsterScraper:
 
 		# CLEANING DATA - COMPUTER SKILLS / TECHINCAL SKILLS
 		tech_comp_skills_to_remove = []
-		technical_skills_path = '/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/1_technical_skills.txt'
-		computer_skills_path = '/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/1_computer_skills.txt'
+		technical_skills_path = '/<path>/<to>/<tech>/<skills>/1_technical_skills.txt'
+		computer_skills_path = '/<path>/<to>/<computer>/<skills>/1_computer_skills.txt'
 		with open(technical_skills_path, 'r') as f:
 			for line in f:
 				tech_comp_skills_to_remove.append(line.strip('\n'))
@@ -199,8 +199,8 @@ class MonsterScraper:
 
 		# CLEANING DATA - SOFT SKILLS WORDS/PHRASES / USELESS WORDS/PHRASES
 		soft_and_useless_words_to_remove = []
-		soft_skills_path = "/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/1_soft_skills.txt"
-		useless_words_path = "/Users/daniellarouche/Desktop/For_Finding_Keywords/Key_Word_Lists_Files/0_useless_words.txt"
+		soft_skills_path = "/<path>/<to>/<soft>/<skills>/1_soft_skills.txt"
+		useless_words_path = "/<path>/<to>/<useless>/<words>/0_useless_words.txt"
 		with open(soft_skills_path, 'r') as f:
 			for line in f:
 				soft_and_useless_words_to_remove.append(line.strip('\n'))
