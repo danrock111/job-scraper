@@ -1,1 +1,1 @@
-# job-scraper
+# job-scraper (Brute force algo)
